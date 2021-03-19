@@ -1,4 +1,4 @@
-# Sia - Docker
+# Docker - skyd
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/siacentral/skyd?color=19cf86&style=for-the-badge)](https://hub.docker.com/r/siacentral/skyd)
 
