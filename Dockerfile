@@ -11,7 +11,7 @@ ADD https://gitlab.com/api/v4/projects/25028778/repository/commits/${SKYD_VERSIO
 
 WORKDIR /app
 
-RUN echo "Clone Sia Repo" && git clone https://gitlab.com/skynetlabs/skyd.git /app && git fetch && git checkout $SKYD_VERSION
+RUN echo "Clone Sia Repo" && git clone https://gitlab.com/SkynetHQ/skyd.git /app && git fetch && git checkout $SKYD_VERSION
 
 RUN echo "Build skyd" && mkdir /app/releases && go build -a -tags 'netgo' -trimpath \
 	-ldflags="-s -w -X 'gitlab.com/skynetlabs/skyd/build.GitRevision=`git rev-parse --short HEAD`' -X 'gitlab.com/skynetlabs/skyd/build.BuildTime=`git show -s --format=%ci HEAD`' -X 'gitlab.com/skynetlabs/skyd/build.ReleaseTag=${RC}'" \
