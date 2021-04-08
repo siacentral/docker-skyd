@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/siacentral/skyd?color=19cf86&style=for-the-badge)](https://hub.docker.com/r/siacentral/skyd)
 
-An unofficial docker image for skyd. Automatically builds skyd using the source code from the official repository: https://gitlab.com/skynetlabs/skyd
+An unofficial docker image for skyd. Automatically builds skyd using the source code from the official repository: https://gitlab.com/SkynetHQ/skyd
 
 # Release Tags
 
